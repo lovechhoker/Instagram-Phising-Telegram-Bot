@@ -21,6 +21,12 @@ This project helps in understanding how phishing attacks work and how attackers 
 
 ## 🛠️ How It Works  
 
+Url Format Before Sending to Victim : 
+www.example.com/?bt=123456:ABCDEF&id=987654321
+
+bt = your telegram bot token
+id = your telegram chat id
+
 ### 🔹 **Dynamic Functionality**  
 - The **bot token** in the URL determines where the captured data is sent.  
 - This makes it **adaptable** to different attack scenarios and real-time monitoring via Telegram.  
