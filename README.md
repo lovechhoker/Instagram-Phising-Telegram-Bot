@@ -1,1 +1,68 @@
-# Instagram-Phising-Telegram-Bot
+# 🚨 Instagram Phishing Telegram Bot  
+
+🔥 **My Social Engineering & Phishing Project: How Attackers Exploit Social Engineering**  
+
+Only For Educational Purpose ♥️
+
+---
+
+## 📌 What I Built  
+
+To demonstrate **real-world attack scenarios**, I created a **phishing page** that integrates with the **Telegram API** to capture and send:  
+
+✅ **Personal details**  
+✅ **Instagram logins**  
+✅ **Gmail logins**  
+✅ **IP lookup information**  
+
+This project helps in understanding how phishing attacks work and how attackers leverage **social engineering techniques**.  
+
+---
+
+## 🛠️ How It Works  
+
+### 🔹 **Dynamic Functionality**  
+- The **bot token** in the URL determines where the captured data is sent.  
+- This makes it **adaptable** to different attack scenarios and real-time monitoring via Telegram.  
+
+### 🔹 **Advanced URL Masking**  
+- To **increase deception**, I experimented with **Instagram’s official redirection service**.  
+- This allows masking a phishing URL to make it appear more **legitimate**.  
+
+---
+
+## 🎯 **Demo: URL Masking in Action**  
+
+For example, this **Instagram redirection** link appears safe but actually redirects users to **Amazon**:  
+
+🔗 [https://l.instagram.com/?u=www.amazon.com&e=AT1cFsJSN4oeOytv_GYdC77kcXOpQRtjKlg91u0AH7LzlfwNVCieumBSP4YcE4IINxHtU8oBBAyoKXnGxeZTZQUoH1mPdCjsxL-xgLQy9X-BaQuzJh3J9JQ](https://l.instagram.com/?u=www.amazon.com&e=AT1cFsJSN4oeOytv_GYdC77kcXOpQRtjKlg91u0AH7LzlfwNVCieumBSP4YcE4IINxHtU8oBBAyoKXnGxeZTZQUoH1mPdCjsxL-xgLQy9X-BaQuzJh3J9JQ)  
+
+📌 **This technique enhances deception, making it harder for users to detect phishing attempts.**  
+
+---
+
+## 🚀 Key Takeaways  
+
+✔️ **How attackers use different social engineering techniques**  
+✔️ **Psychological tricks behind phishing campaigns**  
+✔️ **Telegram API integration for real-time data exfiltration**  
+✔️ **URL redirection techniques to increase credibility**  
+
+---
+
+## ⚠️ Disclaimer  
+
+🚨 **This project is for educational and cybersecurity research purposes only.**  
+🚫 **DO NOT** use it for illegal activities. The goal is to understand how attackers operate so we can build better **cyber defenses**.  
+
+---
+
+## 💡 Conclusion  
+
+This project was a **deep dive into the attacker’s mindset**, allowing me to:  
+🔹 **Understand threats more effectively**  
+🔹 **Develop stronger countermeasures against phishing attacks**  
+
+🛡️ **As ethical hackers, understanding the attack is the first step in building stronger defenses!**  
+
+---
